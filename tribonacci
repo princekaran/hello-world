@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int a[20] ,i,n ;
+    a[1]=1 ,a[2]=1 ,a[3]= 1;
+   printf("enter the no. req" ) ;
+   scanf("%d",&n) ;
+   for(i=1;i<=n-3;i++)
+   {
+       a[i+3] = a[i] + a[i+1] + a[i+2] ;
+   }
+   for(i=1;i<=n;i++)
+   {
+       printf("\n%d",a[i]) ;
+   }
+}
